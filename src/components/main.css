@@ -1,0 +1,48 @@
+body{
+  background-color: rgb(16, 7, 64);
+  color: rgb(231, 204, 70);
+  margin: 0%;
+}
+.navbar{
+  background-color: black;
+  display: flex;
+
+}
+.title:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.image{
+  width: 320px;
+  height: 300px;
+}
+
+.center-div{
+  display: flex;
+  justify-content: center;
+}
+.right-div{
+  display: flex;
+  justify-content: right;
+}
+a{
+  text-decoration: underline;
+  color: rgb(231, 204, 70);
+}
+.home-box{
+  width: 40vw;
+  height: 30vh;
+  border-style: solid;
+  border-color: rgb(231, 204, 70);
+  border-radius: 20px;
+}
+.home-section{
+  display: flex;
+  justify-content:space-evenly;
+  margin-top: 30px;
+}
+.word-right{
+  font-size: 5rem;
+  margin-left: 50px;
+}
