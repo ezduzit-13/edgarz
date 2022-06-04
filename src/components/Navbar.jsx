@@ -8,9 +8,8 @@ const Navbar = () => {
       onClick={()=>{
         window.location.href = ('/')
       }}
-      style={{
-        margin:'5px'
-      }}>ZZZ.</h1>
+     className= 'edgarz'
+      >edgarz.</h1>
       </div>
     </div>
   )
