@@ -53,9 +53,9 @@ const Home = () => {
         <img 
          onClick={()=>window.location.href = ('https://www.linkedin.com/in/edgar-zatarain-0b2b57224/')}
         src={linkedIn} className='social-logo'/>
-        <img 
+        {/* <img 
          onClick={()=>window.location.href = ('https://www.chess.com/member/ezduzit13')}
-        src={chess} className='social-logo'/>
+        src={chess} className='social-logo'/> */}
         <div style={{backgroundColor:'white',borderRadius:'10px'}}>
         <img 
          onClick={()=>window.location.href = ('https://github.com/ezduzit-13')}
