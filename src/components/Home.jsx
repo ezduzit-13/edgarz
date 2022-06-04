@@ -34,7 +34,18 @@ const Home = () => {
           src={myInterest} className='image' />
         </div>
       </div>
+      
     </div>
+    <div className='center-here'>
+        <h1>My Photography</h1>
+      </div>
+      <div className='main-content'>
+        <div className='image'>
+          <img 
+          onClick={()=>navigate('/my-interest')}
+          src={myInterest} className='image' />
+        </div>
+      </div>
     <br /><br />
     <div className='center-here'>      
     <h1>My Socials</h1>
@@ -46,6 +57,7 @@ const Home = () => {
 
 
     }}>
+      
       <div style={{width:'50vw', display:'flex', justifyContent:'space-evenly',gap: '40px'}}>
         <img 
         onClick={()=>window.location.href = ('https://twitter.com/urie_ez')}

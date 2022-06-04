@@ -30,7 +30,6 @@ const MyInterest = () => {
       <h3>Reading</h3>
       <p>
         I remember feeling very homesick at some point in my life. At that same point in time, I ran into a YouTube video on the book titled The courage to be disliked. I found the video interesting and decided to download audible so I could listen to the book while going for walks. I listened to this book along with The Happiness Advantage. The two books gave me a new perspective on life and explained to me exactly why I was sad. With this new perspective and understanding, I found myself feeling less upset about my whole situation. 
-
       </p>
       </div>
     </div>
