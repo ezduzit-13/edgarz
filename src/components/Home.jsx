@@ -6,8 +6,10 @@ import myInterest from '../images/myInterest.JPG'
 import { useNavigate } from 'react-router-dom'
 import twitter from '../images/twitter.png'
 import github from '../images/github.png'
-import chess from '../images/chess.png'
 import linkedIn from '../images/linkedin.png'
+import otherProjects from '../images/otherProjects.png'
+
+
 const Home = () => {
   const navigate = useNavigate()
   
@@ -17,7 +19,7 @@ const Home = () => {
        <div className='center-here'>
          <h1>About Me</h1>
        </div>
-      <div className='main-content'>
+      <div className='center-here'>
         
         <img 
         onClick={()=>navigate('/about-me')}
@@ -27,7 +29,7 @@ const Home = () => {
       <div className='center-here'>
         <h1>My Interest</h1>
       </div>
-      <div className='main-content'>
+      <div className='center-here'>
         <div className='image'>
           <img 
           onClick={()=>navigate('/my-interest')}
@@ -37,15 +39,15 @@ const Home = () => {
       
     </div>
     <div className='center-here'>
-        <h1>My Photography</h1>
+      <h1>Other Projects</h1>
+    </div>
+    <div className='center-here'>
+      <div className='image'>
+        <img 
+        onClick={()=>navigate('/other-projects')}
+        src={otherProjects} className='image' />
       </div>
-      <div className='main-content'>
-        <div className='image'>
-          <img 
-          onClick={()=>navigate('/my-interest')}
-          src={myInterest} className='image' />
-        </div>
-      </div>
+    </div>
     <br /><br />
     <div className='center-here'>      
     <h1>My Socials</h1>
@@ -65,15 +67,10 @@ const Home = () => {
         <img 
          onClick={()=>window.location.href = ('https://www.linkedin.com/in/edgar-zatarain-0b2b57224/')}
         src={linkedIn} className='social-logo'/>
-        {/* <img 
-         onClick={()=>window.location.href = ('https://www.chess.com/member/ezduzit13')}
-        src={chess} className='social-logo'/> */}
         <div style={{backgroundColor:'white',borderRadius:'10px'}}>
         <img 
          onClick={()=>window.location.href = ('https://github.com/ezduzit-13')}
         src={github} className='social-logo'/>
-
-
         </div>
       </div>
     
