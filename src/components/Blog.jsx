@@ -6,20 +6,23 @@ const Blog = () => {
   return (
     <>
   <br /><br /><br /><br />
-
-    <div className='center-here'>
-    <div 
-     onClick={() => navigate('/blog/whyMeditate')}
-    className='blog-container'>
+      <div className="center-here">
+      <div className='blog-container'>
       <div className='center-here'>
-      <h1>Why I Meditate</h1>
+      <h1
+      onClick={() => navigate('/blog/whyMeditate')}
+      >Why I Meditate</h1>
       </div>
       <div 
       className='center-here'>
       <h3>Stories about how and why I started meditating</h3>
       </div>
-    </div>
-    </div>
+      <hr />
+      </div>
+
+      </div>
+     
+    
     <br /><br /><br /><br />
     {/* <div className='center-here'>
     <div className='blog-container'>

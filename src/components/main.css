@@ -73,10 +73,8 @@ body{
 }
 
 .blog-container{
-  background-color: rgb(41, 41, 41);
   height: auto;
-  width: 70vw;
-  border-radius: 30px;
+  width: 60vw;
 }
 .blog-container:hover{
   cursor: pointer;

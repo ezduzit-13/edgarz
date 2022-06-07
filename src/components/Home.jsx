@@ -27,7 +27,6 @@ const Home = () => {
          <h1>About Me</h1>
        </div>
       <div className='center-here'>
-
         <img 
         onClick={()=>navigate('/about-me')}
         src={aboutMe} className='image' />
