@@ -16,7 +16,6 @@ function App() {
     <NavContextProvider>
     <BrowserRouter>
     <Navbar />
-    <NavMenu />
       <Routes>
         <Route exact path = '/' element = {<Home />}/>
         <Route exact path = '/about-me' element = {<AboutMe/>}/>
