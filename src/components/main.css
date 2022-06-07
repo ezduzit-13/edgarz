@@ -7,7 +7,13 @@ body{
   background-color: rgb(255, 255, 255);
   color: black;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  
+}
+.nav-content{
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 60vw;
 }
 .image{
   height: auto;
@@ -80,4 +86,10 @@ body{
 }
 .whyMeditate-container{
   width: 80vw;
+}
+
+.home-section{
+  display: flex;
+  justify-content: space-around;
+  
 }

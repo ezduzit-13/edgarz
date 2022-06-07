@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useContext, useState} from 'react'
 import Navbar from './Navbar'
 import './main.css'
 import aboutMe from '../images/about-me.JPG'
@@ -8,24 +8,32 @@ import twitter from '../images/twitter.png'
 import github from '../images/github.png'
 import linkedIn from '../images/linkedin.png'
 import otherProjects from '../images/otherProjects.png'
+import { NavContext, useNavOptions } from '../context/NavContext'
 
 
 const Home = () => {
   const navigate = useNavigate()
-  
+  const navOptions = useNavOptions()
+
   return (
     <>
-     <div className='home-section'>
+    {/* Here we need to add the home section */}
+
+
+
+      <div className='home-content'>
+
        <div className='center-here'>
          <h1>About Me</h1>
        </div>
       <div className='center-here'>
-        
+
         <img 
         onClick={()=>navigate('/about-me')}
         src={aboutMe} className='image' />
       </div>
       <br /><br />
+
       <div className='center-here'>
         <h1>My Interest</h1>
       </div>
@@ -35,7 +43,6 @@ const Home = () => {
           onClick={()=>navigate('/my-interest')}
           src={myInterest} className='image' />
         </div>
-      </div>
       
     </div>
     <div className='center-here'>
@@ -49,6 +56,7 @@ const Home = () => {
       </div>
     </div>
     <br /><br />
+
     <div className='center-here'>      
     <h1>My Socials</h1>
     </div>
@@ -56,10 +64,8 @@ const Home = () => {
     <div style={{
       display:'flex',
       justifyContent:'center',
-
-
     }}>
-      
+      {/* Icons */}
       <div style={{width:'50vw', display:'flex', justifyContent:'space-evenly',gap: '40px'}}>
         <img 
         onClick={()=>window.location.href = ('https://twitter.com/urie_ez')}
@@ -77,6 +83,9 @@ const Home = () => {
     </div>
     <br /><br />
     
+    </div>
+
+
     </>
   )
 }
