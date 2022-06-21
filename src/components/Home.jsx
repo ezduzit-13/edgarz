@@ -9,7 +9,8 @@ import github from '../images/github.png'
 import linkedIn from '../images/linkedin.png'
 import otherProjects from '../images/otherProjects.png'
 import { NavContext, useNavOptions } from '../context/NavContext'
-
+import myPhotography from '../images/photos.jpg'
+import blog from '../images/blog.jpg'
 
 const Home = () => {
   const navigate = useNavigate()
@@ -19,10 +20,7 @@ const Home = () => {
     <>
     {/* Here we need to add the home section */}
 
-
-
       <div className='home-content'>
-
        <div className='center-here'>
          <h1>About Me</h1>
        </div>
@@ -32,8 +30,17 @@ const Home = () => {
         src={aboutMe} className='image' />
       </div>
       <br /><br />
-
+      {/* Photography */}
       <div className='center-here'>
+         <h1>My Photography</h1>
+       </div>
+      <div className='center-here'>
+        <img
+        onClick={()=>navigate('/photos')} 
+        src={myPhotography} className='image' />
+      </div><br /><br />
+    {/* My interest */}
+      {/* <div className='center-here'>
         <h1>My Interest</h1>
       </div>
       <div className='center-here'>
@@ -42,9 +49,11 @@ const Home = () => {
           onClick={()=>navigate('/my-interest')}
           src={myInterest} className='image' />
         </div>
-      
-    </div>
-    <div className='center-here'>
+    </div> */}
+          
+          {/* Other Projects */}
+
+    {/* <div className='center-here'>
       <h1>Other Projects</h1>
     </div>
     <div className='center-here'>
@@ -53,9 +62,22 @@ const Home = () => {
         onClick={()=>navigate('/other-projects')}
         src={otherProjects} className='image' />
       </div>
-    </div>
+    </div> */}
     <br /><br />
+    {/* My Blog */}
+    <div className='center-here'>
+         <h1>My Blog</h1>
+      </div>
+      <div className='center-here'>
+      <div className='center-here'>
+        <img
+        onClick={()=>navigate('/blog')} 
+        src={blog} className='image' />
+      </div>
+      </div>
+      
 
+    {/* My socials */}
     <div className='center-here'>      
     <h1>My Socials</h1>
     </div>

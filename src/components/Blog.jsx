@@ -23,7 +23,22 @@ const Blog = () => {
       </div>
      
     
-    <br /><br /><br /><br />
+    <br /><br />
+    <div className="center-here">
+      <div className='blog-container'>
+      <div className='center-here'>
+      <h1
+      onClick={() => navigate('/my-interest')}
+      >My Interest</h1>
+      </div>
+      <div 
+      className='center-here'>
+      <h3>All my hobbies and such </h3>
+      </div>
+      <hr />
+      </div>
+
+      </div>
     {/* <div className='center-here'>
     <div className='blog-container'>
       <div className='center-here'>
