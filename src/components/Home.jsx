@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom'
 import twitter from '../images/twitter.png'
 import github from '../images/github.png'
 import linkedIn from '../images/linkedin.png'
+import instagram from '../images/instagram.png'
 import otherProjects from '../images/otherProjects.png'
 import { NavContext, useNavOptions } from '../context/NavContext'
 import myPhotography from '../images/photos.jpg'
@@ -98,6 +99,11 @@ const Home = () => {
         <img 
          onClick={()=>window.location.href = ('https://github.com/ezduzit-13')}
         src={github} className='social-logo'/>
+        </div>
+        <div >
+        <img 
+         onClick={()=>window.location.href = ('https://www.instagram.com/edgar.zata/')}
+        src={instagram} className='social-logo'/>
         </div>
       </div>
     
