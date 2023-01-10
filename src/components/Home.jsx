@@ -64,7 +64,7 @@ const Home = () => {
         src={otherProjects} className='image' />
       </div>
     </div> */}
-    <br /><br />
+    {/* <br /><br /> */}
     {/* My Blog */}
     <div className='center-here'>
          <h1>My Blog</h1>
@@ -111,8 +111,6 @@ const Home = () => {
     <br /><br />
     
     </div>
-
-
     </>
   )
 }

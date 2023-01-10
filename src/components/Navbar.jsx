@@ -1,5 +1,6 @@
 import React from 'react'
 import * as icons from 'react-icons/fa'
+import logo from '../images/eye-logo.png'
 import { useNavOptions } from '../context/NavContext'
 import { useNavigate } from 'react-router-dom'
 
@@ -10,19 +11,20 @@ const Navbar = () => {
   return (
     <>
     <div className='navbar'>
-      <icons.FaBars size = {30}
+      <icons.FaBars size = {50}
       style = {{cursor:'pointer'}}
       onClick={
         ()=>navOptions.setMenu()
       }
       />
       <div>
-      <h1 
+      <img 
       onClick={()=>{
         window.location.href = ('/')
       }}
-     className= 'edgarz'
-      >edgarz.</h1>
+      src = {logo}
+      style = {{height:'80px',width:'auto'}}
+      />
       </div>
       <div></div>
     </div>
