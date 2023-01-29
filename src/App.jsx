@@ -9,6 +9,7 @@ import OtherProjects from "./components/OtherProjects";
 import Photos from "./components/Photos";
 import {NavContextProvider} from "./context/NavContext";
 import WhyMeditate from "./images/WhyMeditate";
+import ArtWork from "./components/ArtWork";
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
         <Route exact path="/photos" element = {<Photos />}/>
         <Route exact path="/blog" element = {<Blog />}/>
         <Route exact path="/blog/whyMeditate" element = {<WhyMeditate />}/>
+        <Route exact path="/artwork" element = {<ArtWork />}/>
+        
       </Routes>
     </BrowserRouter>
     </NavContextProvider>

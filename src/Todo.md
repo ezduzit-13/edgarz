@@ -1,6 +1,8 @@
 ## What I still need to do
 
-- fix grammar in (WhyMeditate.jsx)
+- change images for the different pages
+- get rid of the blog
+
 
 
   

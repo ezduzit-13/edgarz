@@ -40,31 +40,6 @@ const Home = () => {
         onClick={()=>navigate('/photos')} 
         src={myPhotography} className='image' />
       </div><br /><br />
-    {/* My interest */}
-      {/* <div className='center-here'>
-        <h1>My Interest</h1>
-      </div>
-      <div className='center-here'>
-        <div className='image'>
-          <img 
-          onClick={()=>navigate('/my-interest')}
-          src={myInterest} className='image' />
-        </div>
-    </div> */}
-          
-          {/* Other Projects */}
-
-    {/* <div className='center-here'>
-      <h1>Other Projects</h1>
-    </div>
-    <div className='center-here'>
-      <div className='image'>
-        <img 
-        onClick={()=>navigate('/other-projects')}
-        src={otherProjects} className='image' />
-      </div>
-    </div> */}
-    {/* <br /><br /> */}
     {/* My Blog */}
     <div className='center-here'>
          <h1>My Blog</h1>
@@ -77,7 +52,10 @@ const Home = () => {
       </div>
       </div>
       
-
+    {/* My Artwork */}
+    <button
+    onClick={() => {navigate('/artwork')}}
+    >see artwork</button>
     {/* My socials */}
     <div className='center-here'>      
     <h1>My Socials</h1>
@@ -89,6 +67,11 @@ const Home = () => {
     }}>
       {/* Icons */}
       <div style={{width:'50vw', display:'flex', justifyContent:'space-evenly',gap: '40px'}}>
+        {/* 
+        window.location thing is used instead of navigate
+        because you take the user to a different link not in your
+        website
+        */}
         <img 
         onClick={()=>window.location.href = ('https://twitter.com/urie_ez')}
         src={twitter} className='social-logo'/>
