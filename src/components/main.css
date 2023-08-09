@@ -1,13 +1,11 @@
 body{
-  background-color: rgb(0, 0, 0);
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   margin: 0%;
 }
 .navbar{
-  background-color: rgb(255, 255, 255);
-  color: black;
-  display: flex;
-  justify-content: space-between;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   
 }
 .nav-content{
@@ -63,6 +61,11 @@ body{
   width: 60vw;
   height: auto;
 }
+.home-image{
+  width: 80vw;
+  height: auto;
+
+}
 .new-mexico{
   background-color: rgb(255, 225, 183);
   color: black;
@@ -72,23 +75,6 @@ body{
   color: rgb(243, 255, 117);
 }
 
-.blog-container{
-  height: auto;
-  width: 60vw;
-}
-.blog-container:hover{
-  cursor: pointer;
-}
-.blog-header{
-  font-style: italic;
-}
-.whyMeditate-container{
-  width: 80vw;
-}
-.home-section{
-  display: flex;
-  justify-content: space-around; 
-}
 .canvas{
   display: flex;
   border-style: solid;
@@ -97,7 +83,18 @@ body{
   height: 80vh;
 }
 
+table, td, th {
+  border: 1px solid;
+}
 
+table {
+  width: 80vw;
+  border-collapse: collapse;
+}
+
+.poem-body{
+  
+}
 
 
 

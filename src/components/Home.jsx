@@ -1,17 +1,12 @@
 import React,{useContext, useState} from 'react'
 import Navbar from './Navbar'
 import './main.css'
-import aboutMe from '../images/about-me.JPG'
-import myInterest from '../images/myInterest.JPG'
 import { useNavigate } from 'react-router-dom'
-import twitter from '../images/twitter.png'
-import github from '../images/github.png'
-import linkedIn from '../images/linkedin.png'
-import instagram from '../images/instagram.png'
-import otherProjects from '../images/otherProjects.png'
 import { NavContext, useNavOptions } from '../context/NavContext'
-import myPhotography from '../images/photos.jpg'
-import blog from '../images/blog.jpg'
+import me from '../images/me.JPG'
+import TableRow from './TableRow'
+import Spacing from './Spacing'
+
 
 const Home = () => {
   const navigate = useNavigate()
@@ -19,81 +14,60 @@ const Home = () => {
 
   return (
     <>
-    {/* Here we need to add the home section */}
-
-      <div className='home-content'>
-       <div className='center-here'>
-         <h1>About Me</h1>
-       </div>
-      <div className='center-here'>
-        <img 
-        onClick={()=>navigate('/about-me')}
-        src={aboutMe} className='image' />
-      </div>
-      <br /><br />
-      {/* Photography */}
-      <div className='center-here'>
-         <h1>My Photography</h1>
-       </div>
-      <div className='center-here'>
-        <img
-        onClick={()=>navigate('/photos')} 
-        src={myPhotography} className='image' />
-      </div><br /><br />
-    {/* My Blog */}
+    <Spacing />
     <div className='center-here'>
-         <h1>My Blog</h1>
-      </div>
-      <div className='center-here'>
-      <div className='center-here'>
-        <img
-        onClick={()=>navigate('/blog')} 
-        src={blog} className='image' />
-      </div>
-      </div>
-      
-    {/* My Artwork */}
-    <button
-    onClick={() => {navigate('/artwork')}}
-    >see artwork</button>
-    {/* My socials */}
-    <div className='center-here'>      
-    <h1>My Socials</h1>
+      <h3>
+        A Peak Into My Life.
+      </h3>
     </div>
-    <br />
-    <div style={{
-      display:'flex',
-      justifyContent:'center',
-    }}>
-      {/* Icons */}
-      <div style={{width:'50vw', display:'flex', justifyContent:'space-evenly',gap: '40px'}}>
-        {/* 
-        window.location thing is used instead of navigate
-        because you take the user to a different link not in your
-        website
-        */}
-        <img 
-        onClick={()=>window.location.href = ('https://twitter.com/urie_ez')}
-        src={twitter} className='social-logo'/>
-        <img 
-         onClick={()=>window.location.href = ('https://www.linkedin.com/in/edgar-zatarain-0b2b57224/')}
-        src={linkedIn} className='social-logo'/>
-        <div style={{backgroundColor:'white',borderRadius:'10px'}}>
-        <img 
-         onClick={()=>window.location.href = ('https://github.com/ezduzit-13')}
-        src={github} className='social-logo'/>
-        </div>
-        <div >
-        <img 
-         onClick={()=>window.location.href = ('https://www.instagram.com/edgar.zata/')}
-        src={instagram} className='social-logo'/>
-        </div>
-      </div>
-    
+    {/* The Poetry Table */}
+    <Spacing />
+    <div className='center-here'>
+    <table >
+      <th style=
+      {
+        {backgroundColor:'black',color:'white'}
+      }
+      >
+        <h1>Poems</h1>
+      </th>
+      <TableRow>
+        <h2
+        onClick={()=>navigate('aimless-reading')}
+        >Aimless Reading</h2>
+      </TableRow>
+      <TableRow>
+        <h2>Poem 2</h2>
+      </TableRow>
+      <TableRow>
+        <h2>Poem 3</h2>
+      </TableRow>
+    </table>
     </div>
-    <br /><br />
-    
+    {/* The Photography Table */}
+    <br /><br /><br /><br />
+    <div className='center-here'>
+    <table >
+      <th style=
+      {
+        {backgroundColor:'black',color:'white'}
+      }
+      >
+        <h1>Photography</h1>
+      </th>
+      <TableRow>
+        <h2
+        onClick={()=> navigate('florida-nights-photos')}
+        >A Night in Florida</h2>
+      </TableRow>
+      <TableRow>
+        <h2
+        onClick={()=> navigate('new-mexico-photos')}
+        >Santa Fe With Some Buddies</h2>
+      </TableRow>
+    </table>
     </div>
+    <Spacing />
     </>
   )
 }

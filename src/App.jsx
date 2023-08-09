@@ -1,15 +1,12 @@
 
 import {BrowserRouter,Routes,Route,Link,Switch} from "react-router-dom"
-import AboutMe from "./components/AboutMe";
-import Blog from "./components/Blog";
+import AimlessReading from "./components/AimlessReading";
+import FloridaNights from "./components/FloridaNights";
 import Home from "./components/Home";
-import MyInterest from "./components/MyInterest";
+
 import Navbar from "./components/Navbar";
-import OtherProjects from "./components/OtherProjects";
-import Photos from "./components/Photos";
+import NewMexicoPhotos from "./components/NewMexicoPhotos";
 import {NavContextProvider} from "./context/NavContext";
-import WhyMeditate from "./images/WhyMeditate";
-import ArtWork from "./components/ArtWork";
 
 function App() {
   return (
@@ -18,19 +15,12 @@ function App() {
     <Navbar />
       <Routes>
         <Route exact path = '/' element = {<Home />}/>
-        <Route exact path = '/about-me' element = {<AboutMe/>}/>
-        <Route exact path="/my-interest" element = {<MyInterest />}/>
-        <Route exact path="/other-projects" element = 
-        {<OtherProjects/>}/>
-        <Route exact path="/photos" element = {<Photos />}/>
-        <Route exact path="/blog" element = {<Blog />}/>
-        <Route exact path="/blog/whyMeditate" element = {<WhyMeditate />}/>
-        <Route exact path="/artwork" element = {<ArtWork />}/>
-        
+        <Route exact path = '/new-mexico-photos' element = {<NewMexicoPhotos />}/>
+        <Route exact path = '/florida-nights-photos' element = {<FloridaNights />}/>
+        <Route exact path = '/aimless-reading' element = {<AimlessReading />}/>
       </Routes>
     </BrowserRouter>
     </NavContextProvider>
-
   )
 }
 

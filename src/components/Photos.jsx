@@ -69,7 +69,6 @@ const Photos = () => {
     <div className='go-left'>
     <img src={pf6} className='photos-image'/>
     </div>
- 
     <div className='go-right'>
     <img src={pf7} className='photos-image'/>
     </div>
